@@ -1,0 +1,5 @@
+title exercise 0.5
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa req.body.note
+note right of server: do notes.push(note) 
+server->browser: 201  

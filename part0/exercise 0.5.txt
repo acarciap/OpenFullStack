@@ -1,0 +1,22 @@
+title exercise 0.5
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server->browser: 200 - html page template
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: 200 - main.css
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: 200 - spa.js
+
+note right of browser: execute script && send new req for data
+
+browser->server: browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: 200 - send back Nodes array
+
+note right of browser: build 'ul' element with one 'il' by item in data
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: 200 - send back icon
+
+
